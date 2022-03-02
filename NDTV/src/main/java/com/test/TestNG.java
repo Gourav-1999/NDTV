@@ -1,5 +1,6 @@
 package com.test;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.pages.*;
@@ -7,6 +8,7 @@ import com.pages.*;
 import com.util.*;
 
 public class TestNG extends com.util.TestBase  {
+	
 	@BeforeTest
 	public void setUp() {
 		TestBase.initialization();

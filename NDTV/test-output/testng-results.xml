@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-02-28T08:19:00 IST" name="Default suite" finished-at="2022-02-28T08:19:18 IST" duration-ms="17982">
+  <suite started-at="2022-03-02T11:01:19 IST" name="Default suite" finished-at="2022-03-02T11:02:42 IST" duration-ms="82874">
     <groups>
     </groups>
-    <test started-at="2022-02-28T08:19:00 IST" name="Default test" finished-at="2022-02-28T08:19:18 IST" duration-ms="17982">
+    <test started-at="2022-03-02T11:01:19 IST" name="Default test" finished-at="2022-03-02T11:02:42 IST" duration-ms="82874">
       <class name="com.test.TestNG">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.test.TestNG@741a8937]" started-at="2022-02-28T08:19:00 IST" name="setUp" finished-at="2022-02-28T08:19:04 IST" duration-ms="4422" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.test.TestNG@316bcf94]" started-at="2022-03-02T11:01:19 IST" name="setUp" finished-at="2022-03-02T11:02:29 IST" duration-ms="70364" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="google_SearchTest()[pri:0, instance:com.test.TestNG@741a8937]" started-at="2022-02-28T08:19:04 IST" name="google_SearchTest" finished-at="2022-02-28T08:19:13 IST" duration-ms="8655" status="PASS">
+        <test-method signature="google_SearchTest()[pri:0, instance:com.test.TestNG@316bcf94]" started-at="2022-03-02T11:02:29 IST" name="google_SearchTest" finished-at="2022-03-02T11:02:31 IST" duration-ms="2348" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- google_SearchTest -->
-        <test-method signature="ndtv_HomePageTest()[pri:1, instance:com.test.TestNG@741a8937]" started-at="2022-02-28T08:19:13 IST" name="ndtv_HomePageTest" finished-at="2022-02-28T08:19:13 IST" duration-ms="252" status="PASS">
+        <test-method signature="ndtv_HomePageTest()[pri:1, instance:com.test.TestNG@316bcf94]" started-at="2022-03-02T11:02:31 IST" name="ndtv_HomePageTest" finished-at="2022-03-02T11:02:38 IST" duration-ms="6331" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ndtv_HomePageTest -->
-        <test-method signature="operation_Test()[pri:2, instance:com.test.TestNG@741a8937]" started-at="2022-02-28T08:19:13 IST" name="operation_Test" finished-at="2022-02-28T08:19:18 IST" duration-ms="4569" status="PASS">
+        <test-method signature="operation_Test()[pri:2, instance:com.test.TestNG@316bcf94]" started-at="2022-03-02T11:02:38 IST" name="operation_Test" finished-at="2022-03-02T11:02:42 IST" duration-ms="3779" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- operation_Test -->

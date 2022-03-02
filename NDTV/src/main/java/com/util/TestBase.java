@@ -7,7 +7,10 @@ import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class TestBase {
 
@@ -17,7 +20,7 @@ public class TestBase {
 	public TestBase() {
 		try {
 		prop = new Properties();
-		FileInputStream file = new FileInputStream("C:\\Users\\gourav.vig\\eclipse-workspace\\NDTV\\src\\main\\java\\com\\config\\config.properties");
+		FileInputStream file = new FileInputStream("src\\main\\java\\com\\config\\config1.properties");
 		prop.load(file);
 		} catch(IOException e) {
 			e.toString();
@@ -27,13 +30,16 @@ public class TestBase {
 	
 	public static void initialization() {
 		String browserName = prop.getProperty("browser");
-		
+		System.out.println(browserName);
 		if(browserName.equals("chrome")) {
-			System.setProperty("webdriver.chrome.driver", "C:\\Users\\gourav.vig\\eclipse-workspace\\NDTV\\drivers\\chromedriver\\chromedriver.exe");
+			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
 		} else if(browserName.equals("firefox")) {
-			System.setProperty("webdriver.gecho.driver", "");
+			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
+		} else if(browserName.equals("edge")) {
+			WebDriverManager.edgedriver().setup();
+			driver = new EdgeDriver();
 		}
 		
 		driver.manage().window().maximize();
